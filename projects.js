@@ -1,45 +1,45 @@
 const projects = [
     {
-        name: "FTN Formule",
-        subtitle: "[ React Project ]",
-        description: `This is conecept website for Boja d.o.o company which is leader in traffic signalisation in Serbia.
-        `,
-        img: "./assets/images/ftnformule.png",
-        github: "https://github.com/Zoksss/",
-        website: "https://boja.webflow.io/",
-        video: "https://www.youtube.com/@zorantodorovic5771",
-        color: "#7a5fdd"
-    },
-    {
         name: "Quickshape",
         subtitle: "[ React Project ]",
-        description: "Quickshape is simple game where you need to click displayed shape as fast as possible and to have fastest time possible. It features Singleplayer, Multiplayer, Currency, Shop and Inventory system.",
-        img: "./assets/images/fc_png.png",
+        description: `Quickshape is simple game where you need to click displayed shape as fast as possible and to have fastest time possible. It features Singleplayer, Multiplayer, Currency, Shop and Inventory system.
+        `,
+        img: "./assets/images/quickshape_png.png",
         github: "https://github.com/Zoksss/quickshape-react",
-        website: "https://zoksss.github.io/quickshape-react/",
-        video: "https://www.youtube.com/watch?v=clmq3-f6DmY",
-        color: "#f89b21"
+        website: "https://github.com/Zoksss/quickshape-react",
+        video: "https://www.youtube.com/@zorantodorovic5771",
+        color: "#ffebc9"
+    },
+    {
+        name: "Team Gravity Landing",
+        subtitle: "[ Webflow Project ]",
+        description: "Team Gravity Landing Page",
+        img: "./assets/images/crypto_png.png",
+        github: "https://github.com/Zoksss/",
+        website: "https://gravityteam.webflow.io",
+        video: "https://www.youtube.com/@zorantodorovic5771",
+        color: "#47426e"
     },
     {
         name: "Domaci Metal Blog",
         subtitle: "[ Webflow Project ]",
         description: `Domaci Metal is a blog-style platform showcasing guitar tabs for trending TikTok covers. 
         `,
-        img: "./images/domacimetal.png",
+        img: "./assets/images/domacimetal_png.png",
         github: "#",
         website: "https://domacimetal.webflow.io/",
         video: "#",
-        color: "#fff"
+        color: "#c16a5b"
     },
     {
-        name: "Team Gravity Landing",
-        subtitle: "[ Webflow Project ]",
-        description: "Landing page using Webflow for Team Gravity, an ctypto contept agency.",
-        img: "./assets/images/crypto_png.png",
+        name: "FTN Formule",
+        subtitle: "[ React Project ]",
+        description: "FTN Formule is simple learning quiz app. It is made for students learning math formulas, especially ones toward FTN University in Novi Sad, Serbia. It is build with React along with React.Spring for animations. SCSS is used for compact styling.",
+        img: "./assets/images/ftnformule.png",
         github: "https://github.com/Zoksss/",
-        website: "https://teamgravity.webflow.io/",
+        website: "https://zoksss.github.io/ftn-formule/",
         video: "#",
-        color: "#a45fdd"
+        color: "#47426e"
     }
 ]
 
