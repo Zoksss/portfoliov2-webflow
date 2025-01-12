@@ -2,6 +2,8 @@ const navOpen = document.querySelector("#navOpen");
 const hamburger = document.querySelector("#hamburger");
 const intro = document.querySelectorAll(".intro");
 
+const revLoaderWTXParentLoader = document.querySelectorAll(".rev-loaderWTXParent-loader");
+
 
 const transitionFire = document.querySelectorAll(".link-fire");
 const homepage = document.querySelectorAll(".homepage");
@@ -28,6 +30,9 @@ const liveWebsiteBtn = document.querySelector("#liveWebsiteBtn");
 const githubBtn = document.querySelector("#githubBtn");
 const videoDiv = document.querySelector("#videoDiv");
 
+
+const loaderWTXParent = document.querySelector("#loaderWTXParent");
+
 const url = "http://127.0.0.1:5500"
 // https://todoroviczoran.com 
 // http://127.0.0.1:5500
@@ -38,7 +43,13 @@ let projectId = localStorage.getItem('projectId') || 0;
 
 const setProjectId = (n) => {
     localStorage.setItem('projectId', n);
-    window.location.href = url + "/project.html"
+
+    loaderWTXParent.style.display = "block";
+    loaderWTXParent.classList.add('rev-loader-wtx-loader-anim');
+    setTimeout(() => {
+        window.location.href = url + "/project.html"
+        loaderWTXParent.classList.remove('rev-loader-wtx-loader-anim');
+    }, 1200)
 }
 
 let liveWebLink = "";
@@ -74,6 +85,20 @@ const setProject = () => {
     githubLink = currProjectObj.github;
     videoLink = currProjectObj.video; */
 }
+
+
+revLoaderWTXParentLoader.forEach(revLoaderWTXParentLoaderEl => {
+    revLoaderWTXParentLoaderEl.addEventListener("click", () => {
+        console.log("test")
+        loaderWTXParent.style.display = "block";
+        loaderWTXParent.classList.add('rev-loader-wtx-loader-anim');
+        setTimeout(() => {
+            window.location.href = url + "/index.html"
+            loaderWTXParent.classList.remove('rev-loader-wtx-loader-anim');
+        }, 1200)
+    })
+})
+
 
 /*
 
