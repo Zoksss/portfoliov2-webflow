@@ -79,6 +79,8 @@ const setProject = () => {
     projectDesc.innerHTML = currProjectObj.description;
     projectImage.src = currProjectObj.img;
     projectSubtitle.innerHTML = currProjectObj.subtitle;
+    if(projectSubtitle.innerHTML == "[ Webflow Project ]") projectSubtitle.style.color = "#e160f5"
+    else if(projectSubtitle.innerHTML== "[ React Project ]") projectSubtitle.style.color = "#007798"
     projectTitle.innerHTML = currProjectObj.name;
     projectColor.style.background = currProjectObj.color;
     /*liveWebLink = currProjectObj.website;

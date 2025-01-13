@@ -2477,6 +2477,7 @@ a {
   margin-left: auto;
   margin-right: auto;
   display: flex;
+  padding: 0 20px;
 }
 
 .container-custom-nav {
@@ -2611,8 +2612,6 @@ a {
   background-color: var(--darker-dark);
   color: var(--lighter-dark);
   height: auto;
-  padding-left: 20px;
-  padding-right: 20px;
   position: relative;
 }
 
@@ -2633,10 +2632,10 @@ a {
   text-align: right;
   max-width: 650px;
   margin-top: 5px;
-  margin-bottom: 0;
+  margin-bottom: 10px;
   font-family: Lato, sans-serif;
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 .creations-wrapper {
@@ -3244,6 +3243,7 @@ a {
   min-width: 600px;
   margin-left: 0;
   display: block;
+  font-size: 60px;
 }
 
 .text-span-5 {
@@ -3336,6 +3336,34 @@ a {
   position: relative;
 }
 
+.rev-loaderWTXParent-loader {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .project-image {
+    width: 100%;
+    opacity: 0.1;
+  }
+  .project-content-wrapper {
+    align-items: center;
+  }
+  .creations-title-wrapper-lowever {
+    justify-content: center;
+    align-items: center;
+  }
+  .creations-desc {
+    text-align: center;
+  }
+  .loading-heading {
+    margin-left: 80px;
+  }
+  .overlay-light {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 @media screen and (max-width: 991px) {
   .creations-title-wrapper {
     flex-flow: column;
@@ -3561,6 +3589,13 @@ a {
   .loading-desc-upper,
   .contact-desc {
     font-size: 18px;
+  }
+  .loading-heading {
+    min-width: 230px;
+    max-width: 230px;
+    margin-left: 55px;
+    line-height: 40px;
+    font-size: 35px;
   }
 }
 @media screen and (max-width: 479px) {
