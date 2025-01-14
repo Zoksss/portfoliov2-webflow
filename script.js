@@ -9,6 +9,9 @@ const transitionFire = document.querySelectorAll(".link-fire");
 const homepage = document.querySelectorAll(".homepage");
 const skillsBtn = document.querySelector(".skills-button");
 
+const loading = document.querySelector(".loading");
+
+let test = 1;
 
 const projectSubtitle = document.querySelector("#projectSubtitle");
 const projectTitle = document.querySelector("#projectTitle");
@@ -79,8 +82,8 @@ const setProject = () => {
     projectDesc.innerHTML = currProjectObj.description;
     projectImage.src = currProjectObj.img;
     projectSubtitle.innerHTML = currProjectObj.subtitle;
-    if(projectSubtitle.innerHTML == "[ Webflow Project ]") projectSubtitle.style.color = "#e160f5"
-    else if(projectSubtitle.innerHTML== "[ React Project ]") projectSubtitle.style.color = "#007798"
+    if (projectSubtitle.innerHTML == "[ Webflow Project ]") projectSubtitle.style.color = "#e160f5"
+    else if (projectSubtitle.innerHTML == "[ React Project ]") projectSubtitle.style.color = "#007798"
     projectTitle.innerHTML = currProjectObj.name;
     projectColor.style.background = currProjectObj.color;
     /*liveWebLink = currProjectObj.website;
