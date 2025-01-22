@@ -3249,15 +3249,16 @@ a {
   height: 100%;
   display: flex;
   position: absolute;
+  padding-left: 40px;
 }
 
 .loading-heading {
   color: var(--darker-dark);
   width: 600px;
   min-width: 600px;
-  margin-left: 0;
+  margin-left: 15px;
   display: block;
-  font-size: 60px;
+  font-size: 55px;
 }
 
 .text-span-5 {
@@ -3615,7 +3616,8 @@ nav {
     text-align: center;
   }
   .loading-heading {
-    margin-left: 80px;
+    font-size: 48px;
+    margin-left: 120px;
   }
   .overlay-light {
     display: flex;
@@ -3629,6 +3631,14 @@ nav {
   }
   .nav-links .nav-social {
     font-size: 2.9rem;
+  }
+  .overlay-light {
+    padding-left: 0px;
+    align-items: center;
+    justify-content: center;
+  }
+  .loading-heading {
+    margin-left: 0px;
   }
   .creations-title-wrapper {
     flex-flow: column;
@@ -3747,7 +3757,7 @@ nav {
   .loading-heading {
     width: auto;
     min-width: 350px;
-    font-size: 44px;
+    font-size: 40px;
   }
   .loadig-tittle {
     flex-flow: column;
@@ -3784,7 +3794,7 @@ nav {
   }
   .hero-title {
     text-align: center;
-    font-size: 60px;
+    font-size: 50px;
   }
   .hero-intro-text {
     font-size: 18px;
@@ -3906,13 +3916,14 @@ nav {
     padding-right: 0;
   }
   .hero-title {
-    font-size: 35px;
+    font-size: 38px;
   }
   .hero-intro-text {
     font-size: 16px;
+    margin-bottom: 5px;
   }
   .hero-subtitle {
-    font-size: 26px;
+    font-size: 24px;
   }
   .hero-desc {
     max-width: 100%;
