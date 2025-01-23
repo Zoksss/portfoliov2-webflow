@@ -3328,14 +3328,14 @@ a {
   height: 100%;
   display: flex;
   position: absolute;
-  padding-left: 40px;
+  //padding-left: 40px;
 }
 
 .loading-heading {
   color: var(--darker-dark);
   width: 600px;
   min-width: 600px;
-  margin-left: 15px;
+  margin-left: 160px;
   display: block;
   font-size: 55px;
 }
@@ -3746,14 +3746,8 @@ nav {
 
   .loading-heading {
     font-size: 48px;
-    margin-left: 120px;
+    //margin-left: 120px;
 
-  }
-  .overlay-light {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-   // padding-left: 50px;
   }
 }
 
