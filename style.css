@@ -2026,6 +2026,10 @@ textarea.w-select {
   position: relative;
 }
 
+#projectSubtitle {
+  font-weight: 700 !important;
+}
+
 .w-tabs:before,
 .w-tabs:after {
   content: " ";
@@ -3619,7 +3623,7 @@ nav {
 @media screen and (max-width: 1200px) {
   .project-image {
     width: 100%;
-    opacity: 0.1;
+    opacity: 0.2;
   }
   .project-content-wrapper {
     align-items: center;
@@ -3798,6 +3802,9 @@ nav {
     padding-left: 0;
     padding-right: 0;
   }
+  .project-title-title {
+    text-align: center;
+  }
   .hero {
     padding-left: 20px;
     padding-right: 20px;
@@ -3891,6 +3898,9 @@ nav {
     flex-direction: column;
     grid-template-columns: 1fr;
     display: flex;
+  }
+  .project-title-title {
+    text-align: center;
   }
   .button.hero-button {
     width: auto;
