@@ -36,7 +36,7 @@ const videoDiv = document.querySelector("#videoDiv");
 
 const loaderWTXParent = document.querySelector("#loaderWTXParent");
 
-const url = "https://todoroviczoran.com"
+const url = "https://todoroviczoran.com/"
 // https://todoroviczoran.com 
 // http://127.0.0.1:5500
 
@@ -86,9 +86,9 @@ const setProject = () => {
     else if (projectSubtitle.innerHTML == "[ React Project ]") projectSubtitle.style.color = "#007798"
     projectTitle.innerHTML = currProjectObj.name;
     projectColor.style.background = currProjectObj.color;
-    /*liveWebLink = currProjectObj.website;
+    liveWebLink = currProjectObj.website;
     githubLink = currProjectObj.github;
-    videoLink = currProjectObj.video; */
+   // videoLink = currProjectObj.video;
 }
 
 
@@ -105,7 +105,6 @@ revLoaderWTXParentLoader.forEach(revLoaderWTXParentLoaderEl => {
 })
 
 
-/*
 
 liveWebsiteBtn && liveWebsiteBtn.addEventListener("click", () => {
     window.open(
@@ -120,6 +119,8 @@ githubBtn && githubBtn.addEventListener("click", () => {
         "_blank"
     )
 })
+/*
+
 
 videoDiv && videoDiv.addEventListener("click", () => {
     window.open(

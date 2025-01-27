@@ -16,7 +16,7 @@ const projects = [
         description: "Team Gravity Landing Page",
         img: "./assets/images/crypto_png.png",
         github: "https://github.com/Zoksss/",
-        website: "https://gravityteam.webflow.io",
+        website: "https://teamgravity.webflow.io/",
         video: "https://www.youtube.com/@zorantodorovic5771",
         color: "#47426e"
     },

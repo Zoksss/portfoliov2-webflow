@@ -3260,6 +3260,20 @@ a {
   font-size: 55px;
 }
 
+#liveWebsiteBtn {
+  cursor: pointer;
+}
+#liveWebsiteBtn:hover {
+  color: #42b82a;
+}
+
+#githubBtn {
+  cursor: pointer;
+}
+#githubBtn:hover {
+  color: #42b82a;
+}
+
 .text-span-5 {
   font-weight: 400;
 }
