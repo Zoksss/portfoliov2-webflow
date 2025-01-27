@@ -52,7 +52,7 @@ const setProjectId = (n) => {
     setTimeout(() => {
         window.location.href = url + "project.html"
         loaderWTXParent.classList.remove('rev-loader-wtx-loader-anim');
-    }, 1120)
+    }, 1200)
 }
 
 let liveWebLink = "";
@@ -100,7 +100,7 @@ revLoaderWTXParentLoader.forEach(revLoaderWTXParentLoaderEl => {
         setTimeout(() => {
             window.location.href = url
             loaderWTXParent.classList.remove('rev-loader-wtx-loader-anim');
-        }, 1120)
+        }, 1200)
     })
 })
 
