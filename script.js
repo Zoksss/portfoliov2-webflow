@@ -36,7 +36,7 @@ const videoDiv = document.querySelector("#videoDiv");
 
 const loaderWTXParent = document.querySelector("#loaderWTXParent");
 
-const url = "http://todoroviczoran.com"
+const url = "https://todoroviczoran.com"
 // https://todoroviczoran.com 
 // http://127.0.0.1:5500
 
