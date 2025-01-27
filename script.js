@@ -50,7 +50,7 @@ const setProjectId = (n) => {
     loaderWTXParent.style.display = "block";
     loaderWTXParent.classList.add('rev-loader-wtx-loader-anim');
     setTimeout(() => {
-        window.location.href = url + "/project.html"
+        window.location.href = url + "project.html"
         loaderWTXParent.classList.remove('rev-loader-wtx-loader-anim');
     }, 1200)
 }
@@ -98,7 +98,7 @@ revLoaderWTXParentLoader.forEach(revLoaderWTXParentLoaderEl => {
         loaderWTXParent.style.display = "block";
         loaderWTXParent.classList.add('rev-loader-wtx-loader-anim');
         setTimeout(() => {
-            window.location.href = url + "/index.html"
+            window.location.href = url
             loaderWTXParent.classList.remove('rev-loader-wtx-loader-anim');
         }, 1200)
     })
