@@ -2092,7 +2092,7 @@ textarea.w-select {
   position: relative;
 }
 
-#projectSubtitle{
+#projectSubtitle {
   font-weight: 700 !important;
 }
 
@@ -3164,6 +3164,19 @@ a {
   display: block;
 }
 
+.contact-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  gap: 60px;
+  .contact-credits-image{
+    width: 50%;
+    img{
+      width: 100%;
+    }
+  }
+}
 .footer-row2 {
   justify-content: space-between;
   align-items: flex-start;
@@ -3344,20 +3357,19 @@ a {
   font-size: 55px;
 }
 
-#liveWebsiteBtn{
+#liveWebsiteBtn {
   cursor: pointer;
-  &:hover{
-    color: #42b82a
+  &:hover {
+    color: #42b82a;
   }
 }
 
-#githubBtn{
+#githubBtn {
   cursor: pointer;
-  &:hover{
-    color: #42b82a
+  &:hover {
+    color: #42b82a;
   }
 }
-
 
 .text-span-5 {
   font-weight: 400;
@@ -3697,7 +3709,7 @@ nav {
   visibility: hidden;
   z-index: -1;
   animation: LoaderWTX 1200ms cubic-bezier(0.65, 0, 0.35, 1);
-  animation-fill-mode: forwards;
+  animation-fill-mode: forwards !important;
 }
 .nav-links {
   display: flex;
@@ -3732,16 +3744,14 @@ nav {
 
 .loader-wtx-loader-anim {
   animation: LoaderWTX 1200ms cubic-bezier(0.65, 0, 0.35, 1);
-  animation-fill-mode: forwards;
-
+  animation-fill-mode: forwards !important;
 }
 
 .rev-loader-wtx-loader-anim {
   visibility: visible;
   z-index: 999;
   animation: LoaderWTXReverse 1200ms cubic-bezier(0.65, 0, 0.35, 1);
-  animation-fill-mode: forwards;
-
+  animation-fill-mode: forwards !important;
 }
 
 .button {
@@ -3751,13 +3761,10 @@ nav {
   transform: scale(1.1);
 }
 
-
-
 @media screen and (max-width: 1200px) {
   .project-image {
     width: 100%;
     opacity: 0.2;
-
   }
   .project-content-wrapper {
     align-items: center;
@@ -3774,7 +3781,6 @@ nav {
   .loading-heading {
     font-size: 48px;
     //margin-left: 120px;
-
   }
 }
 
@@ -3786,7 +3792,7 @@ nav {
     }
   }
 
-  .overlay-light{
+  .overlay-light {
     padding-left: 0px;
     align-items: center;
     justify-content: center;
@@ -3958,6 +3964,16 @@ nav {
     height: auto;
   }
 
+  .text-span-7{
+    font-size: 12px;
+  }
+  .span-webflow {
+    font-size: 12px;
+  }
+  .text-span-2 {
+    font-size: 12px;
+  }
+
   .nav-links {
     font-size: 2.7rem;
     .nav-social {
@@ -4042,7 +4058,7 @@ nav {
   }
 
   .extra-project-line-title {
-    font-size: 15px;
+    font-size: 18px;
   }
 
   .extra-projects-projects-button-wrapper {
@@ -4088,6 +4104,16 @@ nav {
     line-height: 40px;
     font-size: 35px;
   }
+
+  .contact-wrapper{
+    flex-direction: column;
+    .contact-credits-image{
+      width: 100%;
+      img{
+        width: 100%;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -4132,6 +4158,10 @@ nav {
   .container-custom {
     padding-left: 30px;
     padding-right: 30px;
+  }
+
+  .creations-desc {
+    text-align: center;
   }
 
   .hero {
