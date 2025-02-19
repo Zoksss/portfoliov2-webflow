@@ -3729,6 +3729,7 @@ nav {
     width: 0%;
     visibility: hidden;
     z-index: -1;
+    animation-fill-mode: forwards;
   }
 }
 
@@ -3739,6 +3740,7 @@ nav {
 
   to {
     width: 100%;
+    animation-fill-mode: forwards;
   }
 }
 

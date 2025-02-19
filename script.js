@@ -51,7 +51,6 @@ const setProjectId = (n) => {
     loaderWTXParent.classList.add('rev-loader-wtx-loader-anim');
     setTimeout(() => {
         window.location.href = url + "project.html"
-        loaderWTXParent.classList.remove('rev-loader-wtx-loader-anim');
     }, 1200)
 }
 
@@ -99,7 +98,6 @@ revLoaderWTXParentLoader.forEach(revLoaderWTXParentLoaderEl => {
         loaderWTXParent.classList.add('rev-loader-wtx-loader-anim');
         setTimeout(() => {
             window.location.href = url
-            loaderWTXParent.classList.remove('rev-loader-wtx-loader-anim');
         }, 1200)
     })
 })

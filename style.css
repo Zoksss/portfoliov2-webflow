@@ -3604,6 +3604,7 @@ nav {
     width: 0%;
     visibility: hidden;
     z-index: -1;
+    animation-fill-mode: forwards;
   }
 }
 @keyframes LoaderWTXReverse {
@@ -3612,6 +3613,7 @@ nav {
   }
   to {
     width: 100%;
+    animation-fill-mode: forwards;
   }
 }
 .loader-wtx-loader-anim {
