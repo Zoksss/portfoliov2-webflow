@@ -36,9 +36,9 @@ const videoDiv = document.querySelector("#videoDiv");
 
 const loaderWTXParent = document.querySelector("#loaderWTXParent");
 
-const url = " https://todoroviczoran.com/"
-// https://todoroviczoran.com 
-// http://127.0.0.1:5500
+const url = "https://todoroviczoran.com/"
+// https://todoroviczoran.com/
+// http://127.0.0.1:5500/
 
 const contact = document.querySelector("#contact");
 
@@ -51,7 +51,7 @@ const setProjectId = (n) => {
     loaderWTXParent.classList.add('rev-loader-wtx-loader-anim');
     setTimeout(() => {
         window.location.href = url + "project.html"
-    }, 1200)
+    }, 1600)
 }
 
 let liveWebLink = "";
@@ -98,7 +98,8 @@ revLoaderWTXParentLoader.forEach(revLoaderWTXParentLoaderEl => {
         loaderWTXParent.classList.add('rev-loader-wtx-loader-anim');
         setTimeout(() => {
             window.location.href = url
-        }, 1200)
+            loaderWTXParent.classList.remove('rev-loader-wtx-loader-anim');
+        }, 1600)
     })
 })
 
