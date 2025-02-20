@@ -47,7 +47,7 @@ let projectId = localStorage.getItem('projectId') || 0;
 const setProjectId = (n) => {
     localStorage.setItem('projectId', n);
 
-    loaderWTXParent.style.visibility = "visible";
+    //loaderWTXParent.style.visibility = "visible";
     loaderWTXParent.classList.add('rev-loader-wtx-loader-anim');
     setTimeout(() => {
         window.location.href = url + "project.html"
@@ -94,11 +94,11 @@ const setProject = () => {
 revLoaderWTXParentLoader.forEach(revLoaderWTXParentLoaderEl => {
     revLoaderWTXParentLoaderEl.addEventListener("click", () => {
         console.log("test")
-        loaderWTXParent.style.visibility = "visible";
+        //loaderWTXParent.style.visibility = "visible";
         loaderWTXParent.classList.add('rev-loader-wtx-loader-anim');
         setTimeout(() => {
             window.location.href = url
-            loaderWTXParent.classList.remove('rev-loader-wtx-loader-anim');
+           // loaderWTXParent.classList.remove('rev-loader-wtx-loader-anim');
         }, 1300)
     })
 })
