@@ -36,7 +36,7 @@ const videoDiv = document.querySelector("#videoDiv");
 
 const loaderWTXParent = document.querySelector("#loaderWTXParent");
 
-const url = "https://todoroviczoran.com/"
+const url = "http://127.0.0.1:5500/"
 // https://todoroviczoran.com/
 // http://127.0.0.1:5500/
 
@@ -47,11 +47,11 @@ let projectId = localStorage.getItem('projectId') || 0;
 const setProjectId = (n) => {
     localStorage.setItem('projectId', n);
 
-    loaderWTXParent.style.display = "block";
+    loaderWTXParent.style.visibility = "visible";
     loaderWTXParent.classList.add('rev-loader-wtx-loader-anim');
     setTimeout(() => {
         window.location.href = url + "project.html"
-    }, 1600)
+    }, 1300)
 }
 
 let liveWebLink = "";
@@ -94,12 +94,12 @@ const setProject = () => {
 revLoaderWTXParentLoader.forEach(revLoaderWTXParentLoaderEl => {
     revLoaderWTXParentLoaderEl.addEventListener("click", () => {
         console.log("test")
-        loaderWTXParent.style.display = "block";
+        loaderWTXParent.style.visibility = "visible";
         loaderWTXParent.classList.add('rev-loader-wtx-loader-anim');
         setTimeout(() => {
             window.location.href = url
             loaderWTXParent.classList.remove('rev-loader-wtx-loader-anim');
-        }, 1600)
+        }, 1300)
     })
 })
 
