@@ -326,7 +326,7 @@ function hideLoader() {
 }
 
 // Resetuj loader kada korisnik klikne na novi projekat
-const projectLinks = document.querySelectorAll('.project-link'); // Selektuj sve linkove ka projektima
+const projectLinks = document.querySelectorAll('.creation-item'); // Selektuj sve linkove ka projektima
 projectLinks.forEach(link => {
     link.addEventListener('click', () => {
         const loaderWTXParent = document.querySelector('.rev-loader-wtx-loader-anim');
