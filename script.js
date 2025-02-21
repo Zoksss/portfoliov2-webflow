@@ -335,13 +335,13 @@ function hideLoader() {
     }
 }
 
-// Kada korisnik klikne na projekat, ponovo omogući loader
-const projectLinks = document.querySelectorAll('.creation-item.nav-logo.nav-mobile');
-projectLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        const loaderWTXParent = document.querySelector('.rev-loader-wtx-loader-anim');
+document.addEventListener('click', (event) => {
+    const loaderWTXParent = document.querySelector('.rev-loader-wtx-loader-anim');
+
+    // Provera da li je kliknuti element ili njegov roditelj link koji treba da aktivira loader
+    if (event.target.closest('.creation-item.nav-logo.nav-mobile')) {
         if (loaderWTXParent) {
             loaderWTXParent.style.visibility = 'visible';
         }
-    });
+    }
 });
