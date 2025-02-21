@@ -319,9 +319,12 @@ document.addEventListener('mousemove', function (e) {
 
 function hideLoader() {
     const loaderWTXParent = document.querySelector('.rev-loader-wtx-loader-anim');
+    const loaderWTXParent2 = document.querySelector('.loader-wtx-loader');
     if (loaderWTXParent) {
-        loaderWTXParent.style.opacity = '0';  // Sakrij animaciju
-        loaderWTXParent.style.pointerEvents = 'none'; // Onemogući interakcije
+        loaderWTXParent.style.visibility = "hidden";
+    }
+    if (loaderWTXParent2) {
+        loaderWTXParent2.style.visibility = "hidden";
     }
 }
 
@@ -330,9 +333,12 @@ const projectLinks = document.querySelectorAll('.creation-item'); // Selektuj sv
 projectLinks.forEach(link => {
     link.addEventListener('click', () => {
         const loaderWTXParent = document.querySelector('.rev-loader-wtx-loader-anim');
+        const loaderWTXParent2 = document.querySelector('.loader-wtx-loader');
         if (loaderWTXParent) {
-            loaderWTXParent.style.opacity = '1';  // Vrati animaciju
-            loaderWTXParent.style.pointerEvents = 'auto'; // Ponovo omogući interakcije
+            loaderWTXParent.style.visibility = "visible";
+        }
+        if (loaderWTXParent2) {
+            loaderWTXParent2.style.visibility = "visible";
         }
     });
 });
