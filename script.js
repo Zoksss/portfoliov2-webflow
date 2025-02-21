@@ -87,7 +87,7 @@ const setProject = () => {
     projectColor.style.background = currProjectObj.color;
     liveWebLink = currProjectObj.website;
     githubLink = currProjectObj.github;
-   // videoLink = currProjectObj.video;
+    // videoLink = currProjectObj.video;
 }
 
 
@@ -98,7 +98,7 @@ revLoaderWTXParentLoader.forEach(revLoaderWTXParentLoaderEl => {
         loaderWTXParent.classList.add('rev-loader-wtx-loader-anim');
         setTimeout(() => {
             window.location.href = url
-           // loaderWTXParent.classList.remove('rev-loader-wtx-loader-anim');
+            // loaderWTXParent.classList.remove('rev-loader-wtx-loader-anim');
         }, 1300)
     })
 })
@@ -316,3 +316,22 @@ document.addEventListener('mousemove', function (e) {
 });
 
 */
+
+window.addEventListener('pageshow', (event) => {
+    if (event.persisted) { // Ako je stranica učitana iz bfcache (back-forward cache)
+        resetLoaderAnimation();
+    }
+});
+
+window.addEventListener('popstate', () => {
+    resetLoaderAnimation();
+});
+
+function resetLoaderAnimation() {
+    const loaderWTXParent = document.querySelector('.rev-loader-wtx-loader-anim');
+    if (loaderWTXParent) {
+        loaderWTXParent.classList.remove('rev-loader-wtx-loader-anim'); // Ukloni animaciju
+        void loaderWTXParent.offsetWidth; // Forsira reflow (hack za resetovanje animacije)
+        loaderWTXParent.classList.add('rev-loader-wtx-loader-anim'); // Ponovo dodeli animaciju ako je potrebno
+    }
+}
