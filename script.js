@@ -318,20 +318,18 @@ document.addEventListener('mousemove', function (e) {
 */
 
 window.addEventListener('pageshow', (event) => {
-    if (event.persisted) { // Ako je stranica učitana iz bfcache (back-forward cache)
-        resetLoaderAnimation();
+    if (event.persisted) { // Ako se stranica učitava iz cache-a
+        hideLoader();
     }
 });
 
 window.addEventListener('popstate', () => {
-    resetLoaderAnimation();
+    hideLoader();
 });
 
-function resetLoaderAnimation() {
+function hideLoader() {
     const loaderWTXParent = document.querySelector('.rev-loader-wtx-loader-anim');
     if (loaderWTXParent) {
-        loaderWTXParent.classList.remove('rev-loader-wtx-loader-anim'); // Ukloni animaciju
-        void loaderWTXParent.offsetWidth; // Forsira reflow (hack za resetovanje animacije)
-        loaderWTXParent.classList.add('rev-loader-wtx-loader-anim'); // Ponovo dodeli animaciju ako je potrebno
+        loaderWTXParent.style.visibility = 'hidden'; // Sakrij loader potpuno
     }
 }
