@@ -317,6 +317,16 @@ document.addEventListener('mousemove', function (e) {
 
 */
 
+window.addEventListener('pageshow', (event) => {
+    if (event.persisted) { // Ako se vraća iz cache-a (strelica nazad)
+        hideLoader();
+    }
+});
+
+window.addEventListener('popstate', () => {
+    hideLoader();
+});
+
 function hideLoader() {
     const loaderWTXParent = document.querySelector('.rev-loader-wtx-loader-anim');
     const loaderWTXParent2 = document.querySelector('.loader-wtx-loader');
