@@ -317,38 +317,8 @@ document.addEventListener('mousemove', function (e) {
 
 */
 
-window.addEventListener('pageshow', (event) => {
-    if (event.persisted) { // Ako se vraća iz cache-a (strelica nazad)
-        hideLoader();
+window.addEventListener("pageshow", (event) => {
+    if (event.persisted) {
+        window.location.reload(); // Forsira reload ako se stranica učita iz cache-a
     }
-});
-
-window.addEventListener('popstate', () => {
-    hideLoader();
-});
-
-function hideLoader() {
-    const loaderWTXParent = document.querySelector('.rev-loader-wtx-loader-anim');
-    const loaderWTXParent2 = document.querySelector('.loader-wtx-loader');
-    if (loaderWTXParent) {
-        loaderWTXParent.style.visibility = "hidden";
-    }
-    if (loaderWTXParent2) {
-        loaderWTXParent2.style.visibility = "hidden";
-    }
-}
-
-// Resetuj loader kada korisnik klikne na novi projekat
-const projectLinks = document.querySelectorAll('.creation-item'); // Selektuj sve linkove ka projektima
-projectLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        const loaderWTXParent = document.querySelector('.rev-loader-wtx-loader-anim');
-        const loaderWTXParent2 = document.querySelector('.loader-wtx-loader');
-        if (loaderWTXParent) {
-            loaderWTXParent.style.visibility = "visible";
-        }
-        if (loaderWTXParent2) {
-            loaderWTXParent2.style.visibility = "visible";
-        }
-    });
 });
