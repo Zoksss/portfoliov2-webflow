@@ -317,31 +317,22 @@ document.addEventListener('mousemove', function (e) {
 
 */
 
-window.addEventListener('pageshow', (event) => {
-    if (event.persisted) { // Ako se vraća iz cache-a (strelica nazad)
-        hideLoader();
-    }
-});
-
-window.addEventListener('popstate', () => {
-    hideLoader();
-});
-
-
 function hideLoader() {
     const loaderWTXParent = document.querySelector('.rev-loader-wtx-loader-anim');
     if (loaderWTXParent) {
-        loaderWTXParent.style.visibility = 'hidden';
+        loaderWTXParent.style.opacity = '0';  // Sakrij animaciju
+        loaderWTXParent.style.pointerEvents = 'none'; // Onemogući interakcije
     }
 }
 
-document.addEventListener('click', (event) => {
-    const loaderWTXParent = document.querySelector('.rev-loader-wtx-loader-anim');
-
-    // Provera da li je kliknuti element ili njegov roditelj link koji treba da aktivira loader
-    if (event.target.closest('.creation-item.nav-logo.nav-mobile')) {
+// Resetuj loader kada korisnik klikne na novi projekat
+const projectLinks = document.querySelectorAll('.project-link'); // Selektuj sve linkove ka projektima
+projectLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        const loaderWTXParent = document.querySelector('.rev-loader-wtx-loader-anim');
         if (loaderWTXParent) {
-            loaderWTXParent.style.visibility = 'visible';
+            loaderWTXParent.style.opacity = '1';  // Vrati animaciju
+            loaderWTXParent.style.pointerEvents = 'auto'; // Ponovo omogući interakcije
         }
-    }
+    });
 });
