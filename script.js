@@ -336,7 +336,7 @@ function hideLoader() {
 }
 
 // Kada korisnik klikne na projekat, ponovo omogući loader
-const projectLinks = document.querySelectorAll('.project-link');
+const projectLinks = document.querySelectorAll('.creation-item.nav-logo.nav-mobile');
 projectLinks.forEach(link => {
     link.addEventListener('click', () => {
         const loaderWTXParent = document.querySelector('.rev-loader-wtx-loader-anim');
