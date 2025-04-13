@@ -32,6 +32,20 @@ const projects = [
         color: "#c16a5b"
     },
     {
+        name: "Larson",
+        subtitle: "[ Webflow Project ]",
+        description: "Larson is a landing and a CMS contet page for a architecture design comapny. If featrues development with webflow with custom code for interactions and animations.",
+        img: "./assets/images/larsonfs.png",
+        github: "https://github.com/Zoksss/larson",
+        website: "https://zoksss.github.io/larson/",
+        video: "#",
+        color: "#fff"
+    }
+]
+
+/*
+
+{
         name: "FTN Formule",
         subtitle: "[ React Project ]",
         description: "FTN Formule is simple learning quiz app. It is made for students learning math formulas, especially ones toward FTN University in Novi Sad, Serbia. It is build with React along with React.Spring for animations. SCSS is used for compact styling.",
@@ -41,9 +55,6 @@ const projects = [
         video: "#",
         color: "#47426e"
     }
-]
-
-/*
 {
         name: "FigmaLand Landing",
         subtitle: "[ Webflow Project ]",
